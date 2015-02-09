@@ -21,7 +21,7 @@ before(function(done) {
       postSearch.index({content: 'cucumber apple orange', uid: 4, cid: 2}, 3, next);
     },
     function(next) {
-      postSearch.index({content: 'orange apple pear', uid: 5, cid: 4}, 4, next);
+      postSearch.index({content: 'ORANGE apple pear', uid: 5, cid: 4}, 4, next);
     },
     function(next) {
       postSearch.index({content: 'dog cat', uid: 6, cid: 4}, 5, next);
