@@ -107,6 +107,15 @@ describe('query', function() {
     });
   });
 
+  it('should find the match when query is upper case', function(done) {
+    postSearch.query({content: 'CUCUMBER'}, function(err, ids) {
+      assert.ifError(err);
+      assert.equal(ids.length, 1);
+      assert.notEqual(ids.indexOf('3'), -1);
+      done();
+    });
+  })
+
 });
 
 
