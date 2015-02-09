@@ -46,7 +46,7 @@ postSearch.remove(3);
 Other examples:
 
 ```
-// search for ids where content is `orange` and cid is 2 or 4
+// search for ids where content contains `orange` and cid is 2 or 4
 postSearch.query({content: "orange", cid: [2,4]}, callback);
 
 // search for ids where uid is 5 and return 3 results 
