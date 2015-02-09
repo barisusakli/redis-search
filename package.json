@@ -1,0 +1,35 @@
+{
+  "name": "redis-search",
+  "license": "MIT",
+  "description": "A plugin to search data with redis",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barisusakli/redis-search/"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "redis": "^0.12.1",
+    "async": "~0.9.0",
+    "natural": "^0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/barisusakli/redis-search/issues"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "maintainers": [
+    {
+      "name": "Barış Soner Uşaklı",
+      "email": "barisusakli@gmail.com",
+      "url": "https://github.com/barisusakli"
+    }
+  ]
+}
