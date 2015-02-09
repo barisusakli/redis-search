@@ -7,8 +7,7 @@ Differences :
 
   1. no stems
   2. no metaphone
-  3. different query api 
-  4. query on extra fields 
+  3. query on extra fields 
 
 How to use :
 
