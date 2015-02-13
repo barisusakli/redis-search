@@ -5,9 +5,7 @@ Inspired by https://github.com/tj/reds
 
 Differences :
 
-  1. no stems
-  2. no metaphone
-  3. query on extra fields 
+   query on extra fields
 
 How to use :
 
@@ -49,7 +47,7 @@ Other examples:
 // search for ids where content contains `orange` and cid is 2 or 4
 postSearch.query({content: "orange", cid: [2,4]}, callback);
 
-// search for ids where uid is 5 and return 3 results 
+// search for ids where uid is 5 and return 3 results
 postSearch.query({uid: 5}, 0, 2);
 ```
 
