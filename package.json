@@ -1,5 +1,5 @@
 {
-  "name": "redis-search",
+  "name": "redisearch",
   "license": "MIT",
   "description": "A plugin to search data with redis",
   "version": "0.0.2",
