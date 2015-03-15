@@ -2,7 +2,7 @@
   "name": "redis-search",
   "license": "MIT",
   "description": "A plugin to search data with redis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/barisusakli/redis-search/"
