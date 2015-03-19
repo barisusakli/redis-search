@@ -3,11 +3,11 @@ Index and search data in redis
 
 Inspired by https://github.com/tj/reds
 
-Differences :
+#### Differences :
 
    query on extra fields
 
-How to use :
+#### How to use :
 
 ```
 var redisSearch = require('redisSearch');
@@ -15,7 +15,9 @@ var redisSearch = require('redisSearch');
 var postSearch = redisSearch.createSearch('mypostsearch', [redisClient]);
 ```
 
-Indexing: `postSearch.index(data, id, callback);`
+#### Indexing: 
+
+`postSearch.index(data, id, callback);`
 
 ```
 // index some stuff, the string field must be named `content` others can be anything
@@ -26,7 +28,9 @@ postSearch.index({content: 'orange apple pear', uid: 5, cid: 4}, 4, next);
 postSearch.index({content: 'dog cat', uid: 6, cid: 4}, 5, next);
 ```
 
-Search `postSearch.query(data, callback);`
+#### Search 
+
+`postSearch.query(data, callback);`
 
 ```
 postSearch.query({content: "orange", uid: 5, cid: 2}, function(err, ids) {
@@ -34,14 +38,16 @@ postSearch.query({content: "orange", uid: 5, cid: 2}, function(err, ids) {
 });
 ```
 
-Remove from index: `postSearch.remove(id);`
+#### Remove from index: 
+
+`postSearch.remove(id);`
 
 ```
 postSearch.remove(3);
 ```
 
 
-Other examples:
+#### Other examples:
 
 ```
 // search for ids where content contains `orange` and cid is 2 or 4
