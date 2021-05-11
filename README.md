@@ -33,7 +33,7 @@ postSearch.index({content: 'dog cat', uid: 6, cid: 4}, 5, next);
 `postSearch.query(data, callback);`
 
 ```
-postSearch.query({content: "orange", uid: 5, cid: 2}, function(err, ids) {
+postSearch.query({ query: { content: "orange", uid: 5, cid: 2} }, function(err, ids) {
     console.log(ids); // ["2"]
 });
 ```
@@ -51,9 +51,9 @@ postSearch.remove(3);
 
 ```
 // search for ids where content contains `orange` and cid is 2 or 4
-postSearch.query({content: "orange", cid: [2,4]}, callback);
+postSearch.query({ query: { content: "orange", cid: [2,4] } } , callback);
 
 // search for ids where uid is 5 and return 3 results
-postSearch.query({uid: 5}, 0, 2);
+postSearch.query({ query: { uid: 5 } }, 0, 2);
 ```
 
